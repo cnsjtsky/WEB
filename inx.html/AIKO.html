@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Step 0 & Step 15: Title & Favicon -->
+    <title>Daniyar A. — Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Step 12: External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Step 11: Internal CSS -->
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Step 16: Layout Header Div -->
+    <div class="header-container">
+        <div class="profile-header">
+            <!-- Step 3 & Step 19: Image -->
+            <img src="my_photo.jpg" alt="Daniyar Abdusadykov" class="profile-img">
+            <div class="header-text">
+                <!-- Step 1 & Step 14: Headings with ID -->
+                <h1 id="main-heading">Daniyar Abdusadykov</h1>
+                <h2>Course: Front-End Web Development</h2>
+                <!-- Step 10: Inline CSS -->
+                <p style="color: #94a3b8; font-size: 1.1rem;">IT-2504 Student at Astana IT University. Passionate about Web, Java, & Systems Architecture.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Step 16: Main Content Div -->
+    <div class="main-container">
+        
+        <!-- Step 1 & Step 2: About & Lists -->
+        <section class="card">
+            <h3>About Me & Interests</h3>
+            <p>I build clean web applications and explore software modernization. Currently working on full-stack projects using modern tools.</p>
+
+            <div class="lists-grid">
+                <div>
+                    <h4>My Primary Hobbies</h4>
+                    <ol>
+                        <li>Software Development & Hardware</li>
+                        <li>Gaming & Modding</li>
+                        <li>Strength & Endurance Training</li>
+                    </ol>
+                </div>
+
+                <div>
+                    <h4>Favorite Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com" target="_blank" class="custom-link">GitHub Profile</a></li>
+                        <li><a href="https://w3schools.com" target="_blank" class="custom-link">W3Schools Docs</a></li>
+                        <li><a href="https://google.com" target="_blank" class="custom-link">Google Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Step 4 & Step 7: Interactive Elements & Emojis -->
+        <section class="card flex-between">
+            <div>
+                <h4>Daily Status</h4>
+                <!-- Step 7: Emojis -->
+                <!-- Step 13 & 14: Class Selector .highlight -->
+                <p class="highlight">Current Vibe: Productive 🚀, Energetic ⚡, and Focused 🎯</p>
+            </div>
+            <!-- Step 4: HTML Button -->
+            <button type="button" class="action-btn">Click Me</button>
+        </section>
+
+        <!-- Step 5: Class Schedule Table -->
+        <section class="card">
+            <h3>Weekly Class Schedule</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web Technologies (Front-End)</td>
+                            <td>Monday</td>
+                            <td>10:00 - 11:50</td>
+                        </tr>
+                        <tr>
+                            <td>Databases & SQL</td>
+                            <td>Wednesday</td>
+                            <td>12:00 - 13:50</td>
+                        </tr>
+                        <tr>
+                            <td>Java OOP Architecture</td>
+                            <td>Friday</td>
+                            <td>14:00 - 15:50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Step 8: HTML Form -->
+        <section class="card">
+            <h3>Get in Touch / Quick Preferences</h3>
+            <form action="#" class="styled-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g. Alex Smith" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="alex@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group color-picker-group">
+                    <label for="favcolor">Favorite UI Color Accent:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#6366f1">
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Step 18 & Step 20: Positioning, Float and Clear -->
+        <section class="card">
+            <h3>CSS Layout Playground (Float & Positioning)</h3>
+            <p class="subtext">Demonstrating layout constraints for assignment requirements:</p>
+            
+            <div class="float-demo">
+                <div class="box box-left">Float Left Box</div>
+                <div class="box box-right">Float Right Box</div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="position-demo">
+                <div class="pos-static">Static Position Box (Default Flow)</div>
+                <div class="pos-relative">Relative Position Box (Shifted via CSS)</div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Step 16: Layout Footer Div -->
+    <div class="footer-container">
+        <p>&copy; 2026 Daniyar Abdusadykov • Built for IT-2504 Front-End Course</p>
+    </div>
+
+</body>
+</html>

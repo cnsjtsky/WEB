@@ -1,0 +1,241 @@
+/* Step 13 & 14: ID Selector & Headings */
+#main-heading {
+    color: #ffffff;
+    font-size: 2.2rem; /* Step 19: rem units */
+    margin: 0 0 8px 0;
+    letter-spacing: -0.5px;
+}
+
+/* Header Section Layout */
+.header-container {
+    width: 85%; /* Step 19: % units */
+    max-width: 900px;
+    margin: 40px auto 20px auto; /* Box model: margin */
+    padding: 30px; /* Box model: padding */
+    background: #1e293b;
+    border: 1px solid #334155; /* Box model: border */
+    border-radius: 16px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+/* Step 19: Image Sizing */
+.profile-img {
+    width: 120px; /* Step 19: px units */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #6366f1;
+}
+
+.main-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+}
+
+/* Reusable Card Component */
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #f1f5f9;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 10px;
+}
+
+/* Step 13 & 14: Class Selector .highlight */
+.highlight {
+    background-color: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+    padding: 0.6em 1em; /* Step 19: em units */
+    border-radius: 8px;
+    display: inline-block;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.lists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.custom-link {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.custom-link:hover {
+    text-decoration: underline;
+}
+
+/* Table Design */
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #334155;
+}
+
+th {
+    background-color: #0f172a;
+    color: #94a3b8;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+td {
+    color: #cbd5e1;
+}
+
+/* Form Design */
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #ffffff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    outline: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    border-color: #6366f1;
+}
+
+.color-picker-group {
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Buttons */
+.action-btn, .submit-btn {
+    background-color: #6366f1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover, .submit-btn:hover {
+    background-color: #4f46e5;
+}
+
+/* Step 20: Float and Clear Layout */
+.float-demo {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.box {
+    width: 40%;
+    padding: 12px;
+    background-color: #334155;
+    color: #f8fafc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.box-left {
+    float: left;
+}
+
+.box-right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* Step 18: CSS Positioning */
+.position-demo {
+    background-color: #0f172a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.pos-static {
+    position: static;
+    background-color: #334155;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.pos-relative {
+    position: relative;
+    top: 5px;
+    left: 15px;
+    background-color: #0284c7;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.footer-container {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.subtext {
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
